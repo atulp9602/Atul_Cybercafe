@@ -1,0 +1,289 @@
+* {
+  box-sizing: border-box;
+}
+body
+{
+  position: relative;
+  margin:0px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  background-color: rgba(1, 1, 1, 0.1);
+  width: 100%;
+  height: auto;
+
+}
+nav
+{
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  
+  
+}
+
+nav li{
+  position: relative;
+  top: 0.8rem;
+ list-style-type: none;
+ display: inline;
+ padding-left: 10px;
+ color: black;
+ text-align: center;
+
+}
+
+button
+{
+  padding: 5px;
+  border: 1px solid black;
+  color: black;
+  background-color: linen;
+}
+button:hover
+{
+  background-color: #A8A8A8 ;
+  color: #E0E0E0;
+  cursor: pointer;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+.aboutus
+{
+
+  margin-left: 50%;
+  transform: translate(-50%);
+  width: 60%;
+  height: auto;
+  line-height: 2;
+}
+.noticeped
+{
+  position: relative;
+}
+.notice{
+  font-size: 1em;
+  color: white;
+  position: absolute;
+  right: 1em;
+  top: 20%;
+  width: 30%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.aadhar 
+{
+  position: relative;
+  text-align: center;
+  width: 35%;
+  height: auto;
+  left: 50%;
+  transform: translate(-50%);
+  box-shadow: 2px 2px 6px black;
+}
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+.social
+{
+  padding-top: 18px;
+
+}
+
+.social i{
+ padding-bottom: 20px;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+
+.footer {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: rgba(1, 1, 1, 0.3);
+
+}
+
+.social img{
+  display: block;
+   margin-top: 5px;
+}
+.social img:hover {
+  opacity: 0.4;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+/*@media screen and (max-width: 800px) {
+  .first
+  {
+    display: none;
+  }
+  .extra
+  {
+    display: block;
+
+  }
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 60%;
+  }
+  nav li {
+  position: relative;
+  top: -40px;
+ list-style-type: none;
+ display: inline;
+ padding-left: 10px;
+ color: black;
+ text-align: center;
+
+}
+
+}*/
+@media screen and (min-width: 800px)
+{
+  .backgroundimage
+  {
+    margin-top: 0px;
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .header
+  {
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+  }
+.aadhar
+{
+  width: 50%;
+  height: auto;
+}  
+.aadhar img
+{
+  width: 70%;
+  height: auto;
+}
+  
+}
+
+@media screen and (max-width: 800px) {
+  .backgroundimage
+  {
+    width: 100%;
+    height: auto;
+  }
+.call{
+  background-color: #545454;
+}
+
+  nav li {
+  position: relative;
+  top: -30px ;
+ list-style-type: none;
+ display: inline;
+ padding-left: 10px;
+ color: black;
+ text-align: center;
+
+}
+.aboutus
+{
+  width: 100%;
+  padding: 10px;
+}
+
+.notice
+{
+  font-size: 13px;
+  top: 5%;
+  width: 40%;
+  padding-right: 5px;
+  line-height: 1.5;
+}
+.aadhar,.aadhar img
+{
+  width: 90%;
+  height: auto;
+}
+.copy
+{
+  font-size: 12px;
+}
+.mob{
+  font-size: 12px;
+}
+
+}
+@media screen and (max-width: 443px)
+{
+  .call
+  {
+    background-color: #545454;
+    margin-top:70px ;
+  }
+}
